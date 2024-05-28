@@ -1,0 +1,282 @@
+body {
+    font-family: 'Garamond', 'Georgia', 'Times New Roman', Times, serif;
+  }
+  
+  /* Navigation bar */
+  #home {
+    background-color: #D3D3D3;
+    margin: -1cm -1cm 0 -1cm; /* Consolidated margin settings */
+    padding: 2cm 0;
+    height: 5mm;
+  }
+  
+  .topmenu {
+    color: #000000;
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  
+  .topmenu:hover {
+    color: #000080;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+  
+  .topdiv {
+    float: right;
+    padding-right: 1cm;
+  }
+  
+  .profile_name {
+    float: left;
+    padding-left: 2cm;
+    color: #00008B;
+    font-size: 35px;
+  }
+  
+  .profile_name .contact_info {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact_info img {
+    width: 25px;
+    margin-right: 10px;
+  }
+  
+  /* Titles */
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+    margin: 40px 20px 0 20px; /* Consolidated margin settings */
+    text-decoration: underline;
+  }
+  
+  .introduction {
+    text-align: center;
+    font-size: 30px;
+    float: left;
+    margin: 30px 0 20px 0;
+    animation-duration: 5s; /* Fixed typo */
+    position: relative;
+  }
+  
+  /* Used in About Me sections */
+  .container {
+    display: flex; /* Fixed typo */
+  }
+  
+  /* About Me */
+  .about-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  #about-me h1 {
+    font-size: 60px;
+    margin-top: 30px;
+    color: #000000;
+  }
+  
+  #about-me p {
+    font-size: 30px;
+    color: #000000;
+    margin-top: -1cm;
+  }
+  
+  .profile_image {
+    width: 375px;
+    height: auto; /* Use 'auto' for better height management */
+    vertical-align: middle;
+    margin: 10px;
+  }
+  
+  /* Skills */
+  .all_skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Fixed typo */
+  }
+  
+  .skill {
+    border: 1px solid #808080;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 25px;
+    box-shadow: 0 3px 10px #808080;
+  }
+  
+  .skill img {
+    height: 35px;
+  }
+  
+  .skills h4 {
+    font-size: 30px;
+    margin: 8px 0 5px 0;
+    font-weight: bold;
+  }
+  
+  .skills p {
+    font-size: 25px;
+    color: #080808;
+    margin: 5px 0;
+  }
+  
+  .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Professional Experience */
+  .projects-container {
+    margin: 30px 0 60px 0;
+  }
+  
+  .projects-container hr {
+    border: 1px solid #D3D3D3;
+    width: 75%;
+    margin: 0 auto; /* Centered the HR */
+  }
+  
+  .project-card {
+    margin: 0 15px 15px 30px;
+    padding-bottom: 5px;
+  }
+  
+  .project-card h3 {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+  
+  .project-card li {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  
+  /* Comments */
+  .all_recommendations {
+    display: flex;
+    align-items: center;
+    margin-left: 1in;
+    flex-direction: row;
+    flex-wrap: wrap; /* Fixed typo */
+    padding: 20px;
+  }
+  
+  .recommendation {
+    font-style: normal; /* 'regular' is not a valid value */
+    text-align: left;
+    width: 21.875rem;
+    padding: 1rem;
+    background-color: #C0C0C0;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    margin: 10px;
+    border: 1px solid #808080;
+    font-size: 18px;
+    height: 150px;
+  }
+  
+  .recommendation span {
+    color: #dda0dd;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Scroll to the Top button */
+  .iconbutton {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #dda0dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  /* Form Pop-up */
+  .popup {
+    width: 400px;
+    background-color: #e8bcf0;
+    border-radius: 3mm;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: fixed;
+    padding: 30px;
+    visibility: hidden;
+  }
+  
+  .popup img {
+    padding-top: 20px;
+  }
+  
+  .popup button {
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    color: #808080;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+  }
+  
+  .popup button:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #808080;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  /* Comment form */
+  input, textarea {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    width: 100%;
+  }
+  
+  fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin: 0 50px;
+    border: thin solid #FFFFFF;
+    width: 50%;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #FFFFFF;
+    border: 1px solid #dda0dd;
+    color: #dda0dd;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #dda0dd; /* Fixed typo */
+    border: 1px solid #dda0dd;
+    color: #FFFFFF;
+    cursor: pointer;
+  }  
